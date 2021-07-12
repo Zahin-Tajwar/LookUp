@@ -20,7 +20,7 @@ print(Fore.MAGENTA+'''
 print(Fore.GREEN+"")
 domain = input("Enter Domain:")
 
-print(Fore.GREEN+"Ditectify is working\n")
+print(Fore.GREEN+"LookUp is working\n")
 time.sleep(0.5)
 
 if 'http' not in domain:
@@ -57,7 +57,7 @@ if "Strict-Transport-Security" not in headers:
     attacks.append("Man-In-The-Middle(MITM)")
 
 
-print(Fore.RED+str(len(vulns))+" Vulnerabilities Found!!\n")
+print(Fore.RED+str(len(vulns))+" Vulnerabilities(missing headers) Found!!\n")
 
 print(Fore.CYAN+"Headers Missing-")
 for vuln in vulns:
